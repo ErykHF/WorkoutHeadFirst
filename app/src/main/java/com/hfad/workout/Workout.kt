@@ -1,0 +1,25 @@
+package com.hfad.workout
+
+
+class Workout private constructor(
+val name: String,
+val description :String
+) {
+
+    override fun toString(): String {
+        return this.name
+
+
+    }
+
+    companion object {
+
+        var workouts = arrayOf(
+            Workout("The limb Loosener","5 Handstand Push-ups\n10 1-Legged squats\n15 Pull-ups" ),
+            Workout("Core Agony", "100 Pull-ups\n100 Push-ups\n100 Sit-ups\n100 Squats"),
+            Workout("The Wimp Special", "5 pull-ups\n10 Push-ups\n15 Squats"),
+            Workout("Strength And Length", "500 meter run\n21 x 1.5 pood kettleball\n21 x pull-ups")
+        )
+    }
+
+}
